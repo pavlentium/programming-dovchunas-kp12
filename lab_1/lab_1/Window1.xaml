@@ -1,0 +1,30 @@
+﻿<Window x:Name="Students" x:Class="lab_1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab_1"
+        mc:Ignorable="d"
+        Title="Students" Height="450" Width="800" Background="#FF9CF0C7" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF98F47B"/>
+                <GradientStop Color="#FFDFFADA" Offset="1"/>
+                <GradientStop Color="#FFABF995" Offset="0.438"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image HorizontalAlignment="Left" Height="254" Margin="546,121,0,0" VerticalAlignment="Top" Width="259" Source="/357941797002211.png"/>
+        <Label Content="Інформація про студентів" HorizontalAlignment="Left" Height="93" Margin="50,35,0,0" VerticalAlignment="Top" Width="480" FontFamily="Segoe UI Light" FontSize="43" Foreground="#FF085560" FontStyle="Normal" FontWeight="Normal"/>
+        <Button x:Name="btn1ex" Content="Головне вікно" HorizontalAlignment="Left" Height="39" Margin="600,380,0,0" VerticalAlignment="Top" Width="143" Background="#FFC0F9B1" FontSize="18" Foreground="#FF23595A" Click="btn1ex_Click" Cursor="Hand"/>
+        <Button x:Name="save" Content="Записати" HorizontalAlignment="Left" Height="42" Margin="149,365,0,0" VerticalAlignment="Top" Width="126" Background="#FFB0F19F" Foreground="#FF1F686D" FontSize="22" Click="save_Click" Cursor="Hand"/>
+        <Button x:Name="delete" Content="Видалити" HorizontalAlignment="Left" Height="42" Margin="312,365,0,0" VerticalAlignment="Top" Width="126" Background="#FFB0F19F" Foreground="#FF1F686D" FontSize="22" Click="delete_Click" Cursor="Hand"/>
+        <TextBox x:Name="zbook" HorizontalAlignment="Left" Height="32" Margin="124,167,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" FontSize="20"/>
+        <Label Content="Номер залікової книжки" HorizontalAlignment="Left" Height="46" Margin="149,115,0,0" VerticalAlignment="Top" Width="292" FontFamily="Segoe UI Light" FontSize="25" Foreground="#FF085560" FontStyle="Normal" FontWeight="Normal"/>
+        <Label Content="ПІБ" HorizontalAlignment="Left" Height="46" Margin="263,195,0,0" VerticalAlignment="Top" Width="105" FontFamily="Segoe UI Light" FontSize="25" Foreground="#FF085560" FontStyle="Normal" FontWeight="Normal"/>
+        <TextBox x:Name="pib" HorizontalAlignment="Left" Height="32" Margin="124,235,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" FontSize="20"/>
+        <Label Content="Група" HorizontalAlignment="Left" Height="46" Margin="252,268,0,0" VerticalAlignment="Top" Width="104" FontFamily="Segoe UI Light" FontSize="25" Foreground="#FF085560" FontStyle="Normal" FontWeight="Normal"/>
+        <TextBox x:Name="group" HorizontalAlignment="Left" Height="32" Margin="124,310,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" FontSize="20"/>
+
+    </Grid>
+</Window>

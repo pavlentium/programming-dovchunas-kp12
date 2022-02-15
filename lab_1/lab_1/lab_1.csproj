@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>tumblr_3e03c9980c99f77a67bd9b76b6716903_674396fa_500.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="2680124243a32c48f77f86e8100e76d5.jpg" />
+    <None Remove="357941797002211.png" />
+    <None Remove="360249690010211.png" />
+    <None Remove="Adobe_20220212_112551.png" />
+    <None Remove="Adobe_20220212_113008.png" />
+    <None Remove="Adobe_20220212_114051.png" />
+    <None Remove="jauhdmrpjo771.png" />
+    <None Remove="px8a0rrpjo771.png" />
+    <None Remove="tumblr_04a36f601560679188707c9d26224379_2f2781cf_1280.png" />
+    <None Remove="tumblr_972c2376a976222b3b5cf2bf0a320bb8_ad0910eb_400.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="2680124243a32c48f77f86e8100e76d5.jpg" />
+    <Resource Include="357941797002211.png" />
+    <Resource Include="360249690010211.png" />
+    <Resource Include="Adobe_20220212_112551.png" />
+    <Resource Include="Adobe_20220212_113008.png" />
+    <Resource Include="Adobe_20220212_114051.png" />
+    <Resource Include="jauhdmrpjo771.png" />
+    <Resource Include="px8a0rrpjo771.png" />
+    <Resource Include="tumblr_04a36f601560679188707c9d26224379_2f2781cf_1280.png" />
+    <Resource Include="tumblr_972c2376a976222b3b5cf2bf0a320bb8_ad0910eb_400.png" />
+  </ItemGroup>
+
+</Project>
