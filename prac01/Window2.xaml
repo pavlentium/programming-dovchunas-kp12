@@ -1,0 +1,48 @@
+﻿<Window x:Class="prac01.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prac01"
+        mc:Ignorable="d"
+        Title="Window2" Height="393" Width="1129" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF9D1414"/>
+                <GradientStop Color="#FFD6F0FF" Offset="1"/>
+                <GradientStop Color="#FF54DDFF"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button Content="До головного" HorizontalAlignment="Left" Height="41" Margin="947,297,0,0" VerticalAlignment="Top" Width="132" FontSize="15" Click="Button_Click" Background="#FF62DFFF"/>
+        <Label Content="Режим перевірки" HorizontalAlignment="Center" Height="64" VerticalAlignment="Top" Width="219" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" FontSize="25" FontFamily="Kristen ITC" Margin="5,10,0,0"/>
+        <Label Content="Кодове слово:" HorizontalAlignment="Left" Height="57" Margin="30,64,0,0" VerticalAlignment="Top" Width="205" FontSize="20"/>
+        <TextBox x:Name="cod" HorizontalAlignment="Left" Height="38" Margin="172,68,0,0" Text="роакенвус" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" BorderBrush="#00ABADB3" FontSize="20" Background="#FFC3EDFF" HorizontalContentAlignment="Center" VerticalContentAlignment="Top"/>
+        <Label Content="Кількість введених символів:" HorizontalAlignment="Left" Height="40" Margin="30,106,0,0" VerticalAlignment="Top" Width="274" FontSize="20"/>
+        <TextBox x:Name="kilksim" HorizontalAlignment="Left" Height="31" Margin="306,108,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="25" RenderTransformOrigin="0.5,0.5" BorderBrush="#00ABADB3" FontSize="20" Background="#FFC3EDFF" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label x:Name="testlbl"  Content="" HorizontalAlignment="Left" Height="40" Margin="838,108,0,0" VerticalAlignment="Top" Width="216" FontSize="20"/>
+        <Label x:Name="testlbl2" Content="" HorizontalAlignment="Left" Height="51" Margin="808,151,0,0" VerticalAlignment="Top" Width="188" FontSize="20"/>
+        <Label x:Name="testlbl3" Content="" HorizontalAlignment="Left" Height="43" Margin="907,192,0,0" VerticalAlignment="Top" Width="132" FontSize="20"/>
+        <Label x:Name="testlbl4" Content="" HorizontalAlignment="Left" Height="43" Margin="888,242,0,0" VerticalAlignment="Top" Width="116" FontSize="20"/>
+        <Label Content="Поле для введення:" HorizontalAlignment="Left" Height="36" Margin="30,151,0,0" VerticalAlignment="Top" Width="196" FontSize="20"/>
+        <TextBox x:Name="polved" HorizontalAlignment="Left" Height="38" Margin="32,201,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="249" TextChanged="chin" Background="#FFC3EDFF" FontSize="20"/>
+        <Button x:Name="nextspr" Content="Наступна спроба" HorizontalAlignment="Left" Height="38" Margin="306,202,0,0" VerticalAlignment="Top" Width="101" Click="nextspr_Click" Background="#FF62DFFF"/>
+        <Label Content="Кількість спроб:" HorizontalAlignment="Left" Height="42" Margin="32,284,0,0" VerticalAlignment="Top" Width="194" FontSize="20"/>
+        <TextBox x:Name="testtex"  HorizontalAlignment="Left" Height="32" Margin="192,286,0,0" Text="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" Background="#FFC3EDFF" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20"/>
+        <Label Content="Статистичний аналіз" HorizontalAlignment="Left" Height="45" Margin="728,66,0,0" VerticalAlignment="Top" Width="308" FontSize="20"/>
+        <Label Content="Дисперсія вибірок:" HorizontalAlignment="Left" Height="57" Margin="658,108,0,0" VerticalAlignment="Top" Width="206" FontSize="20"/>
+        <Label Content="Р ідендифікації:" HorizontalAlignment="Left" Height="57" Margin="658,151,0,0" VerticalAlignment="Top" Width="206" FontSize="20"/>
+        <Label Content="Помилка першого роду:" HorizontalAlignment="Left" Height="58" Margin="658,192,0,0" VerticalAlignment="Top" Width="244" FontSize="20"/>
+        <Label Content="Помилка другого роду:" HorizontalAlignment="Left" Height="58" Margin="658,240,0,0" VerticalAlignment="Top" Width="244" FontSize="20"/>
+
+    </Grid>
+</Window>

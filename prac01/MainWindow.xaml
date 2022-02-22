@@ -1,0 +1,29 @@
+﻿<Window x:Class="prac01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prac01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="240" Width="959" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFE283FD"/>
+                <GradientStop Color="#FFF3CACA" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Автентифікація користувача по клавіатурному почерку" HorizontalAlignment="Left" Height="64" Margin="150,23,0,0" VerticalAlignment="Top" Width="840" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" FontSize="25" FontFamily="Kristen ITC"/>
+        <Button x:Name="btnnav" Content="Режим навчання" HorizontalAlignment="Left" Height="44" Margin="61,110,0,0" VerticalAlignment="Top" Width="233" Click="btnnavclk" FontSize="25">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEB93E3"/>
+                    <GradientStop Color="#FFED96D6" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnper" Content="Режим перевірки" HorizontalAlignment="Center" Height="44" Margin="0,110,0,0" VerticalAlignment="Top" Width="233" Click="btnperclk" FontSize="25" Background="#FFEB94E0"/>
+        <Button x:Name="btnex1" Content="Вихід" HorizontalAlignment="Left" Height="44" Margin="663,110,0,0" VerticalAlignment="Top" Width="233" FontSize="25" Click="btnex1clk" Background="#FFEB94E0"/>
+
+    </Grid>
+</Window>
