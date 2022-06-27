@@ -1,0 +1,23 @@
+﻿<Window x:Class="BTS_fan.Groups"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BTS_fan"
+        mc:Ignorable="d"
+        Title="Groups" Height="450" Width="800" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFD681FF"/>
+                <GradientStop Color="#FFEECBFF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid x:Name="GroupsGrid">
+        </Grid>
+        <Button Content="Меню" HorizontalAlignment="Left" Height="44" Margin="699,21,0,0" VerticalAlignment="Top" Width="78" Background="#FFDC95FF" FontSize="18" Click="Button_Exit" RenderTransformOrigin="1.201,-5.175"/>
+        <Label Content="Групи" HorizontalAlignment="Left" Height="66" Margin="64,10,0,0" VerticalAlignment="Top" Width="122" Foreground="#FF19001F" FontSize="36"/>
+        <TextBox TextChanged="Search" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="56" Margin="207,15,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" FontSize="24" Background="#34FFFFFF"/>
+        <Button Content="Додати" HorizontalAlignment="Left" Height="44" Margin="582,21,0,0" VerticalAlignment="Top" Width="78" Background="#FFDC95FF" FontSize="18" Click="newgroup_btn" RenderTransformOrigin="1.201,-5.175"/>
+    </Grid>
+</Window>

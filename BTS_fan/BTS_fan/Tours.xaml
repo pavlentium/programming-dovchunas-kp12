@@ -1,0 +1,44 @@
+﻿<Window x:Class="BTS_fan.Tours"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BTS_fan"
+        mc:Ignorable="d"
+        Title="Tours" Height="450" Width="800" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFD48787"/>
+            <GradientStop Color="#FFFFD3D3" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF84FFB6"/>
+                <GradientStop Color="#FFE1FFED" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="tName" Visibility="Visible" Content="Гастролі" HorizontalAlignment="Center" Height="67" Margin="0,10,0,0" VerticalAlignment="Top" Width="726" FontSize="36" Foreground="#FF130026" HorizontalContentAlignment="Center"/>
+        <Label Visibility="Visible" Content="Тривалість" HorizontalAlignment="Left" Height="45" Margin="10,82,0,0" VerticalAlignment="Top" Width="167" FontSize="26" Foreground="#FF130026"/>
+        <Border CornerRadius="20" BorderBrush="Black" HorizontalAlignment="Left" Height="45" Margin="182,82,0,0" VerticalAlignment="Top" Width="191" Background="#66FFFFFF"/>
+        <Label x:Name="start" Visibility="Visible" Content="2002.12.06" HorizontalAlignment="Left" Height="45" Margin="211,82,0,0" VerticalAlignment="Top" Width="133" FontSize="26" Foreground="#FF130026" HorizontalContentAlignment="Center"/>
+        <Label Visibility="Visible" Content="-" HorizontalAlignment="Left" Height="45" Margin="378,82,0,0" VerticalAlignment="Top" Width="51" FontSize="26" Foreground="#FF130026" HorizontalContentAlignment="Center"/>
+        <Border CornerRadius="20" BorderBrush="Black" HorizontalAlignment="Left" Height="45" Margin="434,82,0,0" VerticalAlignment="Top" Width="191" Background="#66FFFFFF"/>
+        <Label x:Name="end" Visibility="Visible" Content="2002.12.06" HorizontalAlignment="Left" Height="45" Margin="463,82,0,0" VerticalAlignment="Top" Width="133" FontSize="26" Foreground="#FF130026" HorizontalContentAlignment="Center"/>
+        <Label Visibility="Visible" Content="Міста:" HorizontalAlignment="Left" Height="45" Margin="10,307,0,0" VerticalAlignment="Top" Width="167" FontSize="26" Foreground="#FF130026" />
+        <TextBlock TextWrapping="Wrap" Name="Cities_Label" Visibility="Visible" Text="Київ&#xD;&#xA;Берислав&#xD;&#xA;Фастів" HorizontalAlignment="Left" Height="111" Margin="209,307,0,0" VerticalAlignment="Top" Width="519" FontSize="26" Foreground="#FF130026" />
+        <Label Visibility="Visible" Content="Середня вартість квитка:" HorizontalAlignment="Left" Height="45" Margin="10,155,0,0" VerticalAlignment="Top" Width="315" FontSize="26" Foreground="#FF130026" />
+        <Border CornerRadius="20" BorderBrush="Black" HorizontalAlignment="Left" Height="45" Margin="342,155,0,0" VerticalAlignment="Top" Width="123" Background="#66FFFFFF"/>
+        <Label x:Name="avCost" Visibility="Visible" Content="200" HorizontalAlignment="Left" Height="45" Margin="350,155,0,0" VerticalAlignment="Top" Width="107" FontSize="26" Foreground="#FF130026" HorizontalContentAlignment="Center"/>
+        <Label x:Name="start_Copy1" Visibility="Visible" Content="UAH" HorizontalAlignment="Left" Height="45" Margin="462,155,0,0" VerticalAlignment="Top" Width="88" FontSize="26" Foreground="#FF130026" HorizontalContentAlignment="Center"/>
+        <Label Visibility="Visible" Content="Проданих білетів:" HorizontalAlignment="Left" Height="45" Margin="10,216,0,0" VerticalAlignment="Top" Width="288" FontSize="26" Foreground="#FF130026" />
+        <Border CornerRadius="20" BorderBrush="Black" HorizontalAlignment="Left" Height="45" Margin="246,216,0,0" VerticalAlignment="Top" Width="123" Background="#66FFFFFF"/>
+        <Label x:Name="amountOfT" Visibility="Visible" Content="1000000" HorizontalAlignment="Left" Height="45" Margin="254,216,0,0" VerticalAlignment="Top" Width="107" FontSize="26" Foreground="#FF130026" HorizontalContentAlignment="Center"/>
+        <Label Visibility="Visible" Content="Виручка:" HorizontalAlignment="Left" Height="45" Margin="412,216,0,0" VerticalAlignment="Top" Width="118" FontSize="26" Foreground="#FF130026" />
+        <Border CornerRadius="20" BorderBrush="Black" HorizontalAlignment="Left" Height="45" Margin="540,216,0,0" VerticalAlignment="Top" Width="182" Background="#66FFFFFF"/>
+        <Label x:Name="receipts" Visibility="Visible" Content="1000000" HorizontalAlignment="Left" Height="45" Margin="540,216,0,0" VerticalAlignment="Top" Width="182" FontSize="26" Foreground="#FF130026" HorizontalContentAlignment="Center"/>
+        <Label x:Name="start_Copy4" Visibility="Visible" Content="UAH" HorizontalAlignment="Left" Height="45" Margin="716,216,0,0" VerticalAlignment="Top" Width="74" FontSize="26" Foreground="#FF130026" HorizontalContentAlignment="Center"/>
+        <Button Content="&lt;--" FontSize="24" Margin="37,368,650,0" VerticalAlignment="Top" Height="50" Background="#00DDDDDD" Click="Exit_Btn"/>
+    </Grid>
+</Window>

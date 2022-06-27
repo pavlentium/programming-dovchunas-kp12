@@ -1,0 +1,26 @@
+﻿<Window x:Class="BTS_fan.AddGroup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BTS_fan"
+        mc:Ignorable="d"
+        Title="AddGroup" Height="287" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFA4AFFF"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Нова група" HorizontalAlignment="Center" Height="51" Margin="0,22,0,0" VerticalAlignment="Top" Width="163" FontSize="27"/>
+        <TextBox TextChanged="CorrectInp" x:Name="Title" FontSize="27" HorizontalAlignment="Left" Height="38" Margin="94,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="624" Background="Transparent" BorderBrush="#FF394B62"/>
+        <Label Content="Назва:" HorizontalAlignment="Left" Height="37" Margin="10,91,0,0" VerticalAlignment="Top" Width="84" FontSize="23"/>
+        <Label Content="Країна:" HorizontalAlignment="Left" Height="40" Margin="10,155,0,0" VerticalAlignment="Top" Width="84" FontSize="23"/>
+        <TextBox TextChanged="CorrectInp" x:Name="Country" FontSize="27" HorizontalAlignment="Left" Height="38" Margin="94,157,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="306" Background="Transparent" BorderBrush="#FF394B62"/>
+        <Label Content="Рік заснування:" HorizontalAlignment="Left" Height="41" Margin="405,154,0,0" VerticalAlignment="Top" Width="185" FontSize="23"/>
+        <TextBox TextChanged="CorrectInp" x:Name="Year" FontSize="27" HorizontalAlignment="Left" Height="38" Margin="590,157,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" Background="Transparent" BorderBrush="#FF394B62"/>
+        <Button x:Name="AddBtn" IsEnabled="False" Content="Додати" HorizontalAlignment="Center" Height="49" Margin="0,217,0,0" VerticalAlignment="Top" Width="224" Background="#00DDDDDD" FontSize="20" Click="AddBtn_Click"/>
+
+    </Grid>
+</Window>
